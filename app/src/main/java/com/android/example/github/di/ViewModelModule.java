@@ -12,6 +12,7 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
 
+//@Binds注解接口的实现
 @Module
 abstract class ViewModelModule {
     @Binds
@@ -32,3 +33,4 @@ abstract class ViewModelModule {
     @Binds
     abstract ViewModelProvider.Factory bindViewModelFactory(GithubViewModelFactory factory);
 }
+
